@@ -1,0 +1,91 @@
+//escaping
+//variables
+@tablet: ~"(max-width: 800px)";//string literal
+@mobile: ~"(max-width: 500px)";
+
+@font-stack: @sans-serif-font;
+@sans-serif-font: 'Helvetica', Arial, sans-serif;
+
+*{
+  padding:0px;
+  margin: 0px;
+}
+html {
+  font-size: 62.5%;
+}
+
+.center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-vert(){
+  display: flex;
+  align-items: center;
+}
+
+header {
+  background: lightblue;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  
+  
+  .nav-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    .center-vert;
+    
+    h1 {
+      color: white;
+      font-size: 2.4rem;
+    }
+    
+    nav {
+    .center;
+    
+    a {
+      color: white;
+      margin-left: 20px;
+    }//end of a
+  }//end of nav
+ } //end of nav container
+}//end of header
+
+body{
+  .container{
+    max-width:1520px;
+  }
+  h1{
+    margin:20px;
+  }
+  #ourBooks{
+    text-align:center;
+    margin: 40px;
+    font-size:23px;
+  }
+  .image{
+    display:flex; 
+    justify-content:center;
+    
+  }
+  .image-item{
+    width:1024px;
+    height:320px;    
+  }
+  h3{
+    margin: 10px 75px;
+    font-size:18px;
+    
+  }
+  p{
+    font-size:15px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 75px;
+    margin-inline-end: 75px;    
+  }
+  
+}
