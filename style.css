@@ -2,3 +2,7 @@
 @import "reset.less";
 
 @import "variables.less";
+
+@import "index.less";
+
+@import "about.less";
