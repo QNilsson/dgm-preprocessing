@@ -6,12 +6,10 @@
 
 @import "nav.less";
 
+@import "about.less";
 
-//variables
-:root{
- --bgcolor: lightblue;
- --maincolor: white;
-}
+
+
 
 *{
   padding:0px;
@@ -34,7 +32,7 @@ html {
 }
 
 header {
-  background: var(--bgcolor);
+  background: @back-color;
   height: 75px;
   display: flex;
   justify-content: center;
@@ -47,7 +45,7 @@ header {
     .center-vert;
     
     h1 {
-      color: var(--maincolor);
+      color: @main-color;
       font-size: 2.4rem;
     }
     
@@ -55,7 +53,7 @@ header {
     .center;
     
     a {
-      color: var(--maincolor);
+      color: @main-color;
       margin-left: 20px;
     }//end of a
   }//end of nav
